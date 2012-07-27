@@ -4,18 +4,32 @@
   "name": "postfix",
   "maintainer_email": "youremail@example.com",
   "attributes": {
+    "postfix/smarthost": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "postfix::add_postfix_smarthost"
+      ],
+      "description": "The Hostname or IP without or without port of where mail from this server should be relayed to formats: 1.2.3.4, 1.2.3.4:25, domain.com, domain.com:25",
+      "display_name": "Postfix Smarthost"
+    }
   },
   "license": "All rights reserved",
   "suggestions": {
   },
   "platforms": {
   },
-  "maintainer": "me",
+  "maintainer": "github.com/gonzalez",
   "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "version": "0.0.1",
   "recommendations": {
   },
   "recipes": {
+    "weblogic::sys_add_smarthost": "adds smarthost"
   },
   "groupings": {
   },
@@ -23,7 +37,7 @@
   },
   "replacing": {
   },
-  "description": "Installs/Configures postfix",
+  "description": "Postfix Utilities",
   "providing": {
   }
 }
