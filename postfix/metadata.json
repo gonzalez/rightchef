@@ -29,7 +29,7 @@
   "recommendations": {
   },
   "recipes": {
-    "weblogic::sys_add_smarthost": "adds smarthost"
+    "postfix::add_postfix_smarthost": "adds smarthost"
   },
   "groupings": {
   },

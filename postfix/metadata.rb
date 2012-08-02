@@ -7,7 +7,7 @@ version          "0.0.1"
 
 
 
-recipe "weblogic::sys_add_smarthost", "adds smarthost"
+recipe "postfix::add_postfix_smarthost", "adds smarthost"
 
 
 attribute "postfix/smarthost",
