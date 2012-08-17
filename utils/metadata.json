@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+  },
+  "name": "utils/",
+  "maintainer_email": "youremail@example.com",
+  "attributes": {
+    "utils/file": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+
+      ],
+      "display_name": "Filename"
+    }
+  },
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "maintainer": "github.com/gonzalez",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+    "utils::extract_file": "extracts file"
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "System Utilities",
+  "providing": {
+  }
+}
