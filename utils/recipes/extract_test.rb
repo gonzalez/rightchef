@@ -1,3 +1,3 @@
 extract "test.zip" do
-action: unzip
+action :unzip
 end
