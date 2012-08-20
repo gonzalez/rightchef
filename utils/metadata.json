@@ -1,7 +1,7 @@
 {
   "dependencies": {
   },
-  "name": "utils/",
+  "name": "utils",
   "maintainer_email": "youremail@example.com",
   "attributes": {
     "utils/file": {
@@ -28,7 +28,7 @@
   "recommendations": {
   },
   "recipes": {
-    "utils::extract_file": "extracts file"
+    "utils::extract_test": "extracts file"
   },
   "groupings": {
   },
