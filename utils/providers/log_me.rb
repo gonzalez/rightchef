@@ -1,3 +1,3 @@
-action :write
+action :write do
   log :log_string
 end
