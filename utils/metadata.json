@@ -1,0 +1,43 @@
+{
+  "attributes": {
+    "utils/extract/file": {
+      "calculated": false,
+      "recipes": [
+
+      ],
+      "required": "optional",
+      "type": "string",
+      "choice": [
+
+      ],
+      "display_name": "Filename"
+    }
+  },
+  "platforms": {
+  },
+  "providing": {
+  },
+  "maintainer": "github.com/gonzalez",
+  "recipes": {
+    "utils::extract_test": "extracts file",
+    "utils::log_me_test": "writes to log"
+  },
+  "conflicting": {
+  },
+  "description": "System Utilities",
+  "name": "utils/",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "replacing": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "license": "All rights reserved",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "groupings": {
+  }
+}
