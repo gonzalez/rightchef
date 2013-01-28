@@ -1,2 +1,2 @@
 actions :write
-attribute :log_string, :name_attribute => true
+attribute :log_string
