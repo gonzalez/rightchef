@@ -1,6 +1,10 @@
 action :unzip do
-  log "unzipping #{file}"
-  unzip #{file}
+  log "unzipping #{:file}"
+  bash "unzipping #{:file}" do
+  code <<-EOF
+    unzip #{:file}
+  EOF
+  end
 end
 
 action :untar do
