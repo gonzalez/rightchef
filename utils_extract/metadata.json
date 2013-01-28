@@ -1,42 +1,42 @@
 {
-  "dependencies": {
+  "recipes": {
+    "utils_extract::extract_test": "extracts file"
   },
-  "name": "utils",
+  "replacing": {
+  },
+  "providing": {
+  },
+  "suggestions": {
+  },
+  "license": "All rights reserved",
+  "version": "0.0.1",
   "maintainer_email": "youremail@example.com",
+  "name": "utils_extract",
+  "recommendations": {
+  },
+  "platforms": {
+  },
+  "description": "System Utilities",
+  "groupings": {
+  },
   "attributes": {
-    "utils/file": {
-      "required": "optional",
-      "calculated": false,
+    "utils_extract/file": {
+      "recipes": [
+
+      ],
       "choice": [
 
       ],
       "type": "string",
-      "recipes": [
-
-      ],
-      "display_name": "Filename"
+      "calculated": false,
+      "display_name": "Filename",
+      "required": "optional"
     }
   },
-  "license": "All rights reserved",
-  "suggestions": {
-  },
-  "platforms": {
-  },
-  "maintainer": "github.com/gonzalez",
   "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "version": "0.0.1",
-  "recommendations": {
-  },
-  "recipes": {
-    "utils::extract_test": "extracts file"
-  },
-  "groupings": {
-  },
   "conflicting": {
   },
-  "replacing": {
+  "dependencies": {
   },
-  "description": "System Utilities",
-  "providing": {
-  }
+  "maintainer": "github.com/gonzalez"
 }
