@@ -1,8 +1,14 @@
 action :unzip do
-  log "unzipping #{:file}"
-  bash "unzipping #{:file}" do
+  if new_resource.file.nil?
+    file_name=new_resource.name
+  else 
+    file_name=new_resource.file
+  end
+
+  log "unzipping #{file_name}"
+  bash "unzipping #{file_name}" do
   code <<-EOF
-    unzip #{:file}
+    unzip #{file_name}
   EOF
   end
 end
