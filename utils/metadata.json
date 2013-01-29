@@ -1,43 +1,44 @@
 {
-  "attributes": {
-    "utils/extract/file": {
-      "calculated": false,
-      "recipes": [
-
-      ],
-      "required": "optional",
-      "type": "string",
-      "choice": [
-
-      ],
-      "display_name": "Filename"
-    }
+  "suggestions": {
   },
-  "platforms": {
-  },
-  "providing": {
-  },
-  "maintainer": "github.com/gonzalez",
+  "maintainer_email": "youremail@example.com",
   "recipes": {
     "utils::extract_test": "extracts file",
+    "utils::create_tmpfs": "creates a tmpfs using a tmpfd mount and size",
     "utils::log_me_test": "writes to log"
   },
-  "conflicting": {
-  },
-  "description": "System Utilities",
-  "name": "utils/",
-  "version": "0.0.1",
-  "dependencies": {
-  },
-  "maintainer_email": "YOUR_EMAIL",
   "replacing": {
+  },
+  "license": "All rights reserved",
+  "providing": {
   },
   "recommendations": {
   },
-  "suggestions": {
+  "platforms": {
   },
-  "license": "All rights reserved",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "description": "System Utilities",
+  "name": "utils",
   "groupings": {
-  }
+  },
+  "maintainer": "github.com/gonzalez",
+  "version": "0.0.1",
+  "conflicting": {
+  },
+  "attributes": {
+    "utils/extract/file": {
+      "type": "string",
+      "recipes": [
+
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "display_name": "Filename",
+      "required": "optional"
+    }
+  },
+  "dependencies": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n"
 }
