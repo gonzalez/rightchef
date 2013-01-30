@@ -1,57 +1,57 @@
 {
-  "suggestions": {
-  },
-  "version": "0.0.1",
-  "platforms": {
+  "groupings": {
   },
   "attributes": {
     "utils/extract/file": {
+      "required": "optional",
+      "recipes": [
+        "utils::extract_test"
+      ],
+      "calculated": false,
       "choice": [
 
       ],
-      "display_name": "Filename",
-      "recipes": [
-
-      ],
-      "required": "optional",
-      "calculated": false,
-      "type": "string"
+      "type": "string",
+      "display_name": "Filename"
     },
     "utils/tmpfs/mount": {
-      "choice": [
-
-      ],
-      "display_name": "TmpFS Mount Point",
-      "description": "TMPFS Mount Point",
+      "required": "required",
       "recipes": [
         "utils::create_tmpfs"
       ],
-      "required": "required",
       "calculated": false,
-      "type": "string"
+      "choice": [
+
+      ],
+      "description": "TMPFS Mount Point",
+      "type": "string",
+      "display_name": "TmpFS Mount Point"
     }
   },
+  "suggestions": {
+  },
   "license": "All rights reserved",
-  "conflicting": {
-  },
-  "dependencies": {
-  },
-  "providing": {
-  },
-  "maintainer": "github.com/gonzalez",
-  "description": "System Utilities",
   "recommendations": {
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "recipes": {
-    "utils::extract_test": "extracts file",
-    "utils::create_tmpfs": "creates a tmpfs using a tmpfd mount and size",
-    "utils::log_me_test": "writes to log"
   },
   "replacing": {
   },
-  "maintainer_email": "YOUR_EMAIL",
-  "name": "utils/",
-  "groupings": {
-  }
+  "dependencies": {
+  },
+  "recipes": {
+    "utils::log_me_test": "writes to log",
+    "utils::extract_test": "extracts file",
+    "utils::create_tmpfs": "creates a tmpfs using a tmpfd mount and size"
+  },
+  "conflicting": {
+  },
+  "maintainer_email": "youremail@example.com",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "providing": {
+  },
+  "description": "System Utilities",
+  "platforms": {
+  },
+  "version": "0.0.1",
+  "maintainer": "github.com/gonzalez",
+  "name": "utils"
 }
