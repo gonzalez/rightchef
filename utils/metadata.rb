@@ -12,7 +12,8 @@ recipe "utils::create_tmpfs", "creates a tmpfs using a tmpfd mount and size"
 
 
 attribute "utils/extract/file", 
-  :display_name => "Filename"
+  :display_name => "Filename",
+  :recipes => [ "utils::extract_test" ]
 
 attribute "utils/tmpfs/mount",
   :display_name => "TmpFS Mount Point",
