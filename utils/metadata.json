@@ -1,57 +1,70 @@
 {
-  "groupings": {
+  "conflicting": {
   },
-  "attributes": {
-    "utils/extract/file": {
-      "required": "optional",
-      "recipes": [
-        "utils::extract_test"
-      ],
-      "calculated": false,
-      "choice": [
-
-      ],
-      "type": "string",
-      "display_name": "Filename"
-    },
-    "utils/tmpfs/mount": {
-      "required": "required",
-      "recipes": [
-        "utils::create_tmpfs"
-      ],
-      "calculated": false,
-      "choice": [
-
-      ],
-      "description": "TMPFS Mount Point",
-      "type": "string",
-      "display_name": "TmpFS Mount Point"
-    }
-  },
-  "suggestions": {
-  },
-  "license": "All rights reserved",
+  "maintainer": "github.com/gonzalez",
   "recommendations": {
   },
-  "replacing": {
+  "providing": {
+  },
+  "platforms": {
   },
   "dependencies": {
   },
-  "recipes": {
-    "utils::log_me_test": "writes to log",
-    "utils::extract_test": "extracts file",
-    "utils::create_tmpfs": "creates a tmpfs using a tmpfd mount and size"
+  "groupings": {
   },
-  "conflicting": {
+  "suggestions": {
   },
-  "maintainer_email": "youremail@example.com",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "providing": {
-  },
-  "description": "System Utilities",
-  "platforms": {
+  "replacing": {
   },
   "version": "0.0.1",
-  "maintainer": "github.com/gonzalez",
-  "name": "utils"
+  "attributes": {
+    "utils/tmpfs/mount": {
+      "display_name": "TmpFS Mount Point",
+      "required": "required",
+      "calculated": false,
+      "type": "string",
+      "recipes": [
+        "utils::create_tmpfs"
+      ],
+      "description": "TMPFS Mount Point",
+      "choice": [
+
+      ]
+    },
+    "utils/tmpfs/size": {
+      "display_name": "TmpFS Size",
+      "required": "required",
+      "calculated": false,
+      "type": "string",
+      "recipes": [
+        "utils::create_tmpfs"
+      ],
+      "description": "TMPFS Size in MB",
+      "choice": [
+
+      ]
+    },
+    "utils/extract/file": {
+      "display_name": "Filename",
+      "required": "optional",
+      "calculated": false,
+      "type": "string",
+      "recipes": [
+        "utils::extract_test"
+      ],
+      "choice": [
+
+      ]
+    }
+  },
+  "license": "All rights reserved",
+  "maintainer_email": "youremail@example.com",
+  "name": "utils",
+  "recipes": {
+    "utils::log_me_test": "writes to log",
+    "utils::create_tmpfs": "creates a tmpfs using a tmpfd mount and size",
+    "utils::extract_test": "extracts file"
+  },
+  "description": "System Utilities",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n"
 }

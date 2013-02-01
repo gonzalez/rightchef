@@ -20,3 +20,9 @@ attribute "utils/tmpfs/mount",
   :description => "TMPFS Mount Point",
   :required => true,
   :recipes => [ "utils::create_tmpfs" ]
+
+  attribute "utils/tmpfs/size",
+  :display_name => "TmpFS Size",
+  :description => "TMPFS Size in MB",
+  :required => true,
+  :recipes => [ "utils::create_tmpfs" ]
