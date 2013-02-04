@@ -14,12 +14,12 @@ action :unzip do
 end
 
 action :untar do
-  log "untar #{file}"
+  log "untar #{file_name}"
   tar -xvf #{file}
 end
 
 action :untgz do
-  log "untgz #{file}"
+  log "untgz #{file_name}"
   tar -zxvf #{file}
 end
 
