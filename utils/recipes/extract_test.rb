@@ -1,4 +1,4 @@
 utils_extract "test.zip" do
-
-action :unzip
+	file_name edwin.zip
+	action :unzip
 end
