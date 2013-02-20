@@ -14,3 +14,11 @@ action :create do
 
 
 end
+
+action :remove do
+	log "removing tmpfs #{new_resource.tmpfs_mount}"
+end
+
+action :populate do
+	log "populating #{new_resource.tmpfs_mount} with data from"
+end
