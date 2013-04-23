@@ -6,6 +6,6 @@ version          "0.0.1"
 
 
 
-
+depends "rightscale"
 recipe "mongodb::mongodb_install", "Installs MongoDB binaries"
 
