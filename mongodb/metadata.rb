@@ -7,5 +7,5 @@ version          "0.0.1"
 
 
 
-recipe "mongodb::mongodb_installt", "Installs MongoDB binaries"
+recipe "mongodb::mongodb_install", "Installs MongoDB binaries"
 
