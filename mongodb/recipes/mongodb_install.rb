@@ -4,14 +4,14 @@ rightscale_marker :begin
 src_filepath = "http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.3.tgz"
     
 #get the tgz
-remote_file "#{Chef::Config[:file_cache_path]}/mongodb-linux-x86_64-2.4.3.tgz" do
+remote_file "/tmp/mongodb-linux-x86_64-2.4.3.tgz" do
 	source "http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.3.tgz"
 end
 
 #untar and place binaries in /usr/local/bin
 bash "install mongodb" do
 	code <<-EOF
-	tar -zxvf #{Chef::Config[:file_cache_path]}/mongodb-linux-x86_64-2.4.3.tgz -C /usr/src/"	
+	tar -zxvf /tmp/mongodb-linux-x86_64-2.4.3.tgz -C /usr/src/"	
 	EOF
 end
 
