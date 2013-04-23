@@ -1,0 +1,30 @@
+{
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "description": "Postfix Utilities",
+  "recipes": {
+    "mongodb::mongodb_installt": "Installs MongoDB binaries"
+  },
+  "maintainer": "github.com/gonzalez",
+  "name": "mongodb",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "version": "0.0.1",
+  "attributes": {
+  },
+  "providing": {
+  },
+  "suggestions": {
+  },
+  "recommendations": {
+  },
+  "platforms": {
+  },
+  "license": "All rights reserved",
+  "dependencies": {
+  },
+  "replacing": {
+  },
+  "maintainer_email": "youremail@example.com"
+}
