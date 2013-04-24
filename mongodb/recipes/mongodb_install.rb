@@ -9,9 +9,9 @@ remote_file "/tmp/mongodb-linux-x86_64-2.4.3.tgz" do
 end
 
 #untar and place binaries in /usr/local/bin
-bash "install mongodb" do
+bash "install_mongodb" do
 	code <<-EOF
-	tar -zxvf /tmp/mongodb-linux-x86_64-2.4.3.tgz -C /usr/src/
+		tar -zxvf /tmp/mongodb-linux-x86_64-2.4.3.tgz -C /usr/src/
 	EOF
 end
 
