@@ -1,4 +1,5 @@
 # MongoDB Default Configuration
+default.mongodb_datadir = '/data/dir'
 default.mongodb_host = ''
 default.mongodb_port = '27017'
 default.mongodb_max_connections = ''

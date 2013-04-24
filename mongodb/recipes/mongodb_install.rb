@@ -18,7 +18,7 @@ end
   
 #create mongo group
 group "mongo" do
-	
+
 end
 
 
@@ -31,11 +31,12 @@ end
 
 
 #create db path , default
-directory "/data/db" do
+directory node['mongodb_datadir'] do
 	owner "mongo"
 	group "mongo"
 	mode "07055"
 	action :create
+	recursive true
 end
 
 
