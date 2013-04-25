@@ -1,8 +1,8 @@
 # MongoDB Configuration
-mongodb_host = <%= node.mongodb.host %>
-mongodb_port = <%= node.mongodb.port %>
-mongodb_max_connections = <%= node.mongodb.max_connections %>
-mongodb_database = <%= node.mongodb.database %>
-mongodb_useauth = <%= node.mongodb.auth %>
-mongodb_user = <%= node.mongodb.user %>
-mongodb_password = <%= node.mongodb.password %>
+mongodb_host = <%= node[:mongodb][:host] %>
+mongodb_port = <%= node[:mongodb][:port] %>
+mongodb_max_connections = <%= node[:mongodb][:max_connections] %>
+mongodb_database = <%= node[:mongodb][:database] %>
+mongodb_useauth = <%= node[:mongodb][:auth] %>
+mongodb_user = <%= node[:mongodb][:user] %>
+mongodb_password = <%= node[:mongodb][:password] %>
