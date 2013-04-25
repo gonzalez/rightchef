@@ -1,8 +1,99 @@
 # MongoDB Configuration
-mongodb_host = <%= node[:mongodb][:host] %>
-mongodb_port = <%= node[:mongodb][:port] %>
-mongodb_max_connections = <%= node[:mongodb][:max_connections] %>
-mongodb_database = <%= node[:mongodb][:database] %>
-mongodb_useauth = <%= node[:mongodb][:auth] %>
+
+# Where to store the data.
+dbpath = <%= node[:mongodb][:dbpath] %>
+
+#where to log
+logpath = <%= node[:mongodb][:logpath] %>
+
+logappend=true
+
+bind_ip = <%= node[:mongodb][:bind_ip] %>
+port = <%= node[:mongodb][:port] %>
+
+# Enable journaling, http://www.mongodb.org/display/DOCS/Journaling
+journal = <%= node[:mongodb][:journal] %>
+
+# Enables periodic logging of CPU utilization and I/O wait
+cpu = <%= node[:mongodb][:cpu] %>
+
+# Turn on/off security.  Off is currently the default
+#noauth = true
+#auth = true
+
+# Verbose logging output.
+verbose = <%= node[:mongodb][:verbose] %>
+
+# Inspect all client data for validity on receipt (useful for
+# developing drivers)
+objcheck = <%= node[:mongodb][:objcheck] %>
+
+# Enable db quota management
+quota = <%= node[:mongodb][:quota] %>
+
+# Set oplogging level where n is
+#   0=off (default)
+#   1=W
+#   2=R
+#   3=both
+#   7=W+some reads
+oplog = <%= node[:mongodb][:oplog] %>
+
+# Diagnostic/debugging option
+nocursors = <%= node[:mongodb][:nocursors] %>
+
+# Ignore query hints
+nohints = <%= node[:mongodb][:nohints] %>
+
+# Disable the HTTP interface (Defaults to localhost:27018).
+nohttpinterface = <%= node[:mongodb][:nohttpinterface] %>
+
+# Turns off server-side scripting.  This will result in greatly limited
+# functionality
+noscripting = <%= node[:mongodb][:noscripting] %>
+
+# Turns off table scans.  Any query that would do a table scan fails.
+notablescan = <%= node[:mongodb][:notablescan] %>
+
+# Disable data file preallocation.
+noprealloc = <%= node[:mongodb][:noprealloc] %>
+
+# Specify .ns file size for new databases.
+nssize = <%= node[:mongodb][:nssize] %>
+
+# Accout token for Mongo monitoring server.
+mms-token = <%= node[:mongodb][:mms-token] %>
+
+# Server name for Mongo monitoring server.
+mms-name = <%= node[:mongodb][:mms-name] %>
+
+# Ping interval for Mongo monitoring server.
+mms-interval = <%= node[:mongodb][:mms-interval] %>
+
+# Replication Options
+
+replSet = = <%= node[:mongodb][:replSet] %>
+
+# in replicated mongo databases, specify here whether this is a slave or master
+slave = <%= node[:mongodb][:slave] %>
+source = <%= node[:mongodb][:source] %>
+
+# Slave only: specify a single database to replicate
+only = <%= node[:mongodb][:only] %>
+# or
+master = <%= node[:mongodb][:master] %>
+#
+
+# Address of a server to pair with.
+pairwith = <%= node[:mongodb][:pair] %>
+# Address of arbiter server.
+arbiter = <%= node[:mongodb][:arbiter] %>
+# Automatically resync if slave data is stale
+#autoresync
+# Custom size for replication operation log.
+oplogSize = <%= node[:mongodb][:oplogSize] %>
+# Size limit for in-memory storage of op ids.
+opIdMem = <%= node[:mongodb][:opIdMem] %>
+ngodb_useauth = <%= node[:mongodb][:auth] %>
 mongodb_user = <%= node[:mongodb][:user] %>
 mongodb_password = <%= node[:mongodb][:password] %>
