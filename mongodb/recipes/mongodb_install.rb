@@ -31,7 +31,7 @@ end
 
 
 #create db path , default
-directory default[:mongodb][:datadir] do
+directory node[:mongodb][:datadir] do
 	owner "mongo"
 	group "mongo"
 	mode "07055"
