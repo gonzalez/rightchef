@@ -42,11 +42,11 @@ end
 
 
 
-  template "mongodb-config" do 
+template "mongodb-config" do 
   	path "/etc/mongod.conf"
   	source "mongodb.conf.erb"
   	mode 0644
-  end
+end
 
 
   rightscale_marker :end
