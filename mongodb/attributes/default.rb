@@ -1,5 +1,5 @@
 # MongoDB Default Configuration
-default[:mongodb][:dbpath] = '/var/log/mongodb'
+default[:mongodb][:datadir] = '/var/log/mongodb'
 default[:mongodb][:logpath] = '/var/log/mongodb/mongodb.log'
 default[:mongodb][:bind_ip] = '127.0.0.1'
 default[:mongodb][:port] = '27017'

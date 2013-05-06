@@ -1,7 +1,7 @@
 # MongoDB Configuration
 
 # Where to store the data.
-dbpath = <%= node[:mongodb][:dbpath] %>
+dbpath = <%= node[:mongodb][:datadir] %>
 
 #where to log
 logpath = <%= node[:mongodb][:logpath] %>
