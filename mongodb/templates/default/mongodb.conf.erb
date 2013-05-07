@@ -61,15 +61,6 @@ noprealloc = <%= node[:mongodb][:noprealloc] %>
 # Specify .ns file size for new databases.
 nssize = <%= node[:mongodb][:nssize] %>
 
-# Accout token for Mongo monitoring server.
-mms-token = <%= node[:mongodb][:mmstoken] %>
-
-# Server name for Mongo monitoring server.
-mms-name = <%= node[:mongodb][:mmsname] %>
-
-# Ping interval for Mongo monitoring server.
-mms-interval = <%= node[:mongodb][:mmsinterval] %>
-
 # Replication Options
 
 replSet = = <%= node[:mongodb][:replSet] %>
