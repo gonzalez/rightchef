@@ -75,16 +75,11 @@ only = <%= node[:mongodb][:only] %>
 master = <%= node[:mongodb][:master] %>
 #
 
-# Address of a server to pair with.
-pairwith = <%= node[:mongodb][:pair] %>
-# Address of arbiter server.
-arbiter = <%= node[:mongodb][:arbiter] %>
+
 # Automatically resync if slave data is stale
 #autoresync
 # Custom size for replication operation log.
 oplogSize = <%= node[:mongodb][:oplogSize] %>
 # Size limit for in-memory storage of op ids.
 opIdMem = <%= node[:mongodb][:opIdMem] %>
-ngodb_useauth = <%= node[:mongodb][:auth] %>
-mongodb_user = <%= node[:mongodb][:user] %>
-mongodb_password = <%= node[:mongodb][:password] %>
+mongodb_useauth = <%= node[:mongodb][:auth] %>
