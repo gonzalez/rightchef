@@ -37,7 +37,7 @@ quota = <%= node[:mongodb][:quota] %>
 #   2=R
 #   3=both
 #   7=W+some reads
-oplog = <%= node[:mongodb][:oplog] %>
+#oplog = <%= node[:mongodb][:oplog] %>
 
 # Diagnostic/debugging option
 nocursors = <%= node[:mongodb][:nocursors] %>
@@ -63,7 +63,7 @@ nssize = <%= node[:mongodb][:nssize] %>
 
 # Replication Options
 
-replSet = = <%= node[:mongodb][:replSet] %>
+replSet = <%= node[:mongodb][:replSet] %>
 
 # in replicated mongo databases, specify here whether this is a slave or master
 slave = <%= node[:mongodb][:slave] %>
@@ -79,7 +79,9 @@ master = <%= node[:mongodb][:master] %>
 # Automatically resync if slave data is stale
 #autoresync
 # Custom size for replication operation log.
-oplogSize = <%= node[:mongodb][:oplogSize] %>
+#oplogSize = <%= node[:mongodb][:oplogSize] %>
 # Size limit for in-memory storage of op ids.
-opIdMem = <%= node[:mongodb][:opIdMem] %>
+#opIdMem = <%= node[:mongodb][:opIdMem] %>
+
+
 mongodb_useauth = <%= node[:mongodb][:auth] %>
