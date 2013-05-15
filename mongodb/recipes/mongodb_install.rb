@@ -11,29 +11,31 @@ end
 #untar and place binaries in /usr/local/bin
 bash "install mongodb" do
 	code <<-EOH
-		tar -zxvf /tmp/mongodb-linux-x86_64-2.4.3.tgz -C /usr/src/
+		tar -zxvf /tmp/mongodb-linux-x86_64-2.4.3.tgz -C /tmp
+    mv /tmp/mongodb-linux-x86_64-2.4.3/bin/* /usr/bin/
+    rm -rf /tmp/mongodb-linux-x86_64-2.4.3*
 	EOH
 end
 
   
 #create mongo group
-group "mongo" do
+group "mongodb" do
 
 end
 
 
 #create mongo user
-user "mongo" do
+user "mongodb" do
 	comment "MongoDB User"
-	gid "mongo"
+	gid "mongodb"
 	shell "/bin/false"
 end
 
 
 #create db path , default
 directory node[:mongodb][:datadir] do
-	owner "mongo"
-	group "mongo"
+	owner "mongodb"
+	group "mongodb"
 	mode "07055"
 	action :create
 	recursive true
@@ -49,4 +51,4 @@ template "mongodb-config" do
 end
 
 
-  rightscale_marker :end
+rightscale_marker :end
