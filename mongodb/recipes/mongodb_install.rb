@@ -18,13 +18,13 @@ bash "install mongodb" do
 end
 
   
-#create mongo group
+#create mongodb group
 group "mongodb" do
 
 end
 
 
-#create mongo user
+#create mongodb user
 user "mongodb" do
 	comment "MongoDB User"
 	gid "mongodb"
@@ -41,14 +41,22 @@ directory node[:mongodb][:datadir] do
 	recursive true
 end
 
-
-
-
+#mongodb config file
 template "mongodb-config" do 
   	path "/etc/mongod.conf"
   	source "mongodb.conf.erb"
   	mode 0644
 end
+
+#mongodb init.d script
+template "mongodb-init" do
+  path "/etc/init.d/mongodb"
+  source "mongod_init.erb"
+  mode 0700
+end
+
+
+
 
 
 rightscale_marker :end
