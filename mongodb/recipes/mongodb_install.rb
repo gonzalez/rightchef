@@ -43,7 +43,7 @@ end
 
 #mongodb config file
 template "mongodb-config" do 
-  	path "/etc/mongod.conf"
+  	path "/etc/mongodb.conf"
   	source "mongodb.conf.erb"
   	mode 0644
 end
