@@ -11,7 +11,7 @@ end
 #untar and place binaries in /usr/local/bin
 bash "install mongodb" do
 	code <<-EOH
-		tar -zxvf /tmp/mongodb-linux-x86_64-2.4.3.tgz -C /tmp
+	tar -zxvf /tmp/mongodb-linux-x86_64-2.4.3.tgz -C /tmp
     mv /tmp/mongodb-linux-x86_64-2.4.3/bin/* /usr/bin/
     rm -rf /tmp/mongodb-linux-x86_64-2.4.3*
 	EOH
@@ -43,7 +43,7 @@ end
 
 #mongodb config file
 template "mongodb-config" do 
-  	path "/etc/mongodb.conf"
+  	path "/etc/mongod.conf"
   	source "mongodb.conf.erb"
   	mode 0644
 end
@@ -54,9 +54,5 @@ template "mongodb-init" do
   source "mongod_init.erb"
   mode 0700
 end
-
-
-
-
 
 rightscale_marker :end
